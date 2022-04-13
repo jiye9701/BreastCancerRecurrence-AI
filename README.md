@@ -1,1 +1,1 @@
-# comp377_project
+# Group 2 COMP377 Project

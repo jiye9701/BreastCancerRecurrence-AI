@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "d1eb3ab7-bd3f-4830-b29c-615b7fecb9db",
+		"name": "COMP377",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Predict API",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"age\": \"'60-69'\",\r\n    \"menopause\": \"'ge40'\",\r\n    \"tumor-size\": \"'30-34'\",\r\n    \"inv-nodes\": \"'3-5'\",\r\n    \"node-caps\": \"'yes'\",\r\n    \"deg-malig\": \"'2'\",\r\n    \"breast\": \"'left'\",\r\n    \"breast-quad\": \"'central'\",\r\n    \"irradiat\": \"'yes'\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:12345/predict",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "12345",
+					"path": [
+						"predict"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
